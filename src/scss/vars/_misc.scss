@@ -1,0 +1,36 @@
+@mixin underline {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -3px;
+        background-color: $gray;
+        height: 1px;
+        width: 0;
+        transition: $all;
+    }
+
+    &:hover {
+        color: #000;
+        
+        &:before {
+            width: 100%;
+        }
+        
+
+    }
+}
+
+@mixin underline-nav {
+
+    &:before {
+        bottom: 10px;
+    }
+
+    &:hover:before {
+        width: calc(100% - 20px);    
+    }
+}
