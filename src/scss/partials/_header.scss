@@ -33,6 +33,13 @@ header .container {
     color: $gray;
     font-family: $nav;
     font-size: 1rem;
+    transition: $color;
+
+    &:hover {
+        color: #000;
+    }
+
+    @include underline;
 
     span {
         font-weight: bold;
@@ -53,10 +60,24 @@ header .container {
    
 }
 
-.nav__item:last-child {
-    .header__nav-link {
-        padding-right: 0;
-    }
+// .nav__item:last-child {
+//     .header__nav-link {
+//         padding-right: 0;
+        
+//     }
+// }
+
+.top-block {
+    display: flex;
 }
 
+.nav__item.flat {
+    
+    .nav__link {
+        position: relative;
+        transition: $color;
 
+        @include underline;
+        @include underline-nav
+    }
+}

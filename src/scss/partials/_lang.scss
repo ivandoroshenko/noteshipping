@@ -1,0 +1,44 @@
+.lang {
+    margin-right: 15px;
+    min-width: 30px;
+    list-style-type: none;
+    
+}
+
+.lang__list {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.lang__item {
+    display: none;
+    margin: 0 5px;
+
+    &.active {
+        display: block;
+        order: 2; 
+
+        .lang__link {
+            pointer-events: none;
+            opacity: 1;
+        }
+    }
+
+}
+
+.lang__link {
+    color: $gray;
+
+    &:hover { 
+        color: #000;
+    }
+}
+
+.lang:hover {
+    
+    .lang__item {
+        display: block;
+    }
+
+} 
