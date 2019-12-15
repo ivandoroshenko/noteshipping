@@ -1,0 +1,49 @@
+.news__block {
+    
+    position: relative;
+    top: -50px;
+
+    .container {
+        background: $lightGray;
+        padding: 26px;
+    }
+}
+
+.news__slider {
+    max-height: 166px;
+    overflow: hidden;
+}
+
+.news {
+    transition: $all;
+    max-height: 100%;
+
+    &.slide.active {
+        margin-top: -166px;
+    }
+
+    p {
+        color: $title;
+    }
+    
+}
+
+.news__title {
+    font-size: 1.62rem;
+}
+
+.news-teaser {
+    display: flex;
+    flex-direction: column;
+
+    .news-teaser__text {
+        color: $title;
+    }
+    
+    .more {
+        font-size: 0.8rem;
+        align-self: flex-end;
+        color: $title;
+    }
+}
+
