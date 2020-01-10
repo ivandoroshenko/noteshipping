@@ -3,23 +3,6 @@
 const doc = document;
 const win = window;
 
-// function events() {
-//     let dropdown = doc.querySelectorAll('.header__nav-link');
-//         dropdown.forEach(function(elem, index) {
-//             elem.addEventListener('mouseover', function(e){
-//                 let link = e.target;
-//                 let dropItem = link.parentElement;
-//                 let dropItems = doc.querySelectorAll('.dropdown');
-//                     dropItems.forEach(function(item) {
-//                         item.classList.remove('active');
-//                     });
-//                 if(dropItem.classList.contains('dropdown')) {
-//                     dropItem.classList.add('active');
-//                 }
-               
-//             });
-//         });
-// }
 
 // events();
 let launch = true;
@@ -79,6 +62,16 @@ function playSlider(activeSlider) {
 }
 pauseSlider(newsSlider);
 
+document.addEventListener('mouseover', function(e){
+    let target = e.target;
+    let sliderWrap = target.closest('.slider__wrap');
+    if(sliderWrap) {
+        console.log(sliderWrap);
+        let slider = sliderWrap.querySelector('.slider');
+        pauseSlider(slider);
+    }
+    });
+
 let sliders = doc.querySelectorAll('.slider');
     sliders.forEach(function (activeSlider) {
         activeSlider.addEventListener('mouseout', function(){
@@ -90,6 +83,3 @@ let sliders = doc.querySelectorAll('.slider');
     })
 
 
-
-    
-    

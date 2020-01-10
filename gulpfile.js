@@ -19,7 +19,7 @@ async function styles() {
    return gulp.src('./src/scss/main.scss')
    .pipe(sourcemaps.init())
    .pipe(plumber())
-   .pipe(sass().on('error', sass.logError))
+   .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
    .pipe(autoprefixer({
       browsers: ['last 10 versions'],
       cascade: false

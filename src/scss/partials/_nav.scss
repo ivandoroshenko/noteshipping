@@ -9,6 +9,20 @@
 .nav__item {
     flex-shrink: 0;
     flex-grow: 1;
+    position: relative;
+
+    & + .nav__item:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 1em;
+        width: 2px;
+        background: #367a79;
+    }
+
+  
 }
 
 .nav__link {
