@@ -12,6 +12,8 @@ const rigger = require('gulp-rigger');
 
 const jsFiles = [
    './src/js/libs.js',
+   './src/js/jquery.slim.min.js',
+   './src/js/slick.min.js',
    './src/js/custom.js'
 ]
 

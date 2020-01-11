@@ -110,17 +110,17 @@
             <a class="slider__control next" href="javascript:void(0);">
                     <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
             </a>
-            <div class="slider main-slider" data-slider="true">
-                <div class="active slide">
+            <div id="main-slider" class="main-slider" data-slider="true">
+                <div class="">
                     <img src="./img/banner1.jpg" alt="banner.jpg">
                 </div>
-                <div class="slide">
+                <div class="">
                     <img src="./img/banner2.png" alt="banner2.jpg">
                 </div>
-                <div class="slide">
+                <div class="">
                     <img src="./img/banner3.png" alt="banner2.jpg">
                 </div>
-                <div class="slide">
+                <div class="">
                         <img src="./img/banner4.png" alt="banner3jpg">
                 </div>
             </div>
@@ -129,40 +129,42 @@
             <section class="news__block">
                 <!-- <h2 class="news__title">News</h2> -->
                 <div class="container">
-                    <div class="news__slider slider playing" data-slider="true">
-                        <article class="news slide">
-                            <h2 class="news__title">Димира шиппинг ждет пополнение во флоте</h2>
-                            <p><span class="news__author">Создано Димира Шиппинг</span><time datetime="2019-12-05">05/12/2019</time></p>
-                            <div class="news-teaser">
-                                <p class="news-teaser__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                    Magni, ex eaque perspiciatis perferendis nulla tenetur adipisci veniam culpa nisi 
-                                    voluptatum soluta eum rerum ab alias, vitae necessitatibus voluptatem minima neque!
-                                </p>
-                                <a href="./news.html" class="more">Читать больше >></a>
-                            </div>
-                        </article>
-                        <article class="news slide">
-                            <h2 class="news__title">Димира шиппинг ждет пополнение во флоте</h2>
-                            <p><span class="news__author">Создано Димира Шиппинг</span><time datetime="2019-12-05">05/12/2019</time></p>
-                            <div class="news-teaser">
-                                <p class="news-teaser__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                    Magni, ex eaque perspiciatis perferendis nulla tenetur adipisci veniam culpa nisi 
-                                    voluptatum soluta eum rerum ab alias, vitae necessitatibus voluptatem minima neque!
-                                </p>
-                                <a href="./news.html" class="more">Читать больше >></a>
-                            </div>
-                        </article>
-                        <article class="news slide">
-                            <h2 class="news__title">Димира шиппинг ждет пополнение во флоте</h2>
-                            <p><span class="news__author">Создано Димира Шиппинг </span><time datetime="2019-12-05">05/12/2019</time></p>
-                            <div class="news-teaser">
-                                <p class="news-teaser__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                    Magni, ex eaque perspiciatis perferendis nulla tenetur adipisci veniam culpa nisi 
-                                    voluptatum soluta eum rerum ab alias, vitae necessitatibus voluptatem minima neque!
-                                </p>
-                                <a href="./news.html" class="more">Читать больше >></a>
-                            </div>
-                        </article>
+                    <div class="slider__wrap">
+                        <div id="news-slider" class="news__slider slider" data-slider="true">
+                            <article class="news slide">
+                                <h2 class="news__title">Димира шиппинг ждет пополнение во флоте</h2>
+                                <p><span class="news__author">Создано Димира Шиппинг</span><time datetime="2019-12-05">05/12/2019</time></p>
+                                <div class="news-teaser">
+                                    <p class="news-teaser__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        Magni, ex eaque perspiciatis perferendis nulla tenetur adipisci veniam culpa nisi 
+                                        voluptatum soluta eum rerum ab alias, vitae necessitatibus voluptatem minima neque!
+                                    </p>
+                                    <a href="./news.html" class="more">Читать больше >></a>
+                                </div>
+                            </article>
+                            <article class="news slide">
+                                <h2 class="news__title">Димира шиппинг ждет пополнение во флоте</h2>
+                                <p><span class="news__author">Создано Димира Шиппинг</span><time datetime="2019-12-05">05/12/2019</time></p>
+                                <div class="news-teaser">
+                                    <p class="news-teaser__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        Magni, ex eaque perspiciatis perferendis nulla tenetur adipisci veniam culpa nisi 
+                                        voluptatum soluta eum rerum ab alias, vitae necessitatibus voluptatem minima neque!
+                                    </p>
+                                    <a href="./news.html" class="more">Читать больше >></a>
+                                </div>
+                            </article>
+                            <article class="news slide">
+                                <h2 class="news__title">Димира шиппинг ждет пополнение во флоте</h2>
+                                <p><span class="news__author">Создано Димира Шиппинг </span><time datetime="2019-12-05">05/12/2019</time></p>
+                                <div class="news-teaser">
+                                    <p class="news-teaser__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        Magni, ex eaque perspiciatis perferendis nulla tenetur adipisci veniam culpa nisi 
+                                        voluptatum soluta eum rerum ab alias, vitae necessitatibus voluptatem minima neque!
+                                    </p>
+                                    <a href="./news.html" class="more">Читать больше >></a>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </section>

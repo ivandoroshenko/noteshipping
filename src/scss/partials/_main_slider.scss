@@ -5,6 +5,7 @@
     .slider__control {
         position: absolute;
         top: 50%;
+        z-index: 2;
         transform: translateY(-50%);
         transition: $all;
         cursor: pointer;
@@ -41,7 +42,7 @@
 .slider.main-slider {
     overflow: hidden;
     display: flex;
-    
+    max-width: 100%;
     
     img,
     .slide {
@@ -49,6 +50,7 @@
     }
     
     .slide {
+        min-width: 100%;
         transition: $all;
     }
 
