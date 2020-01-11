@@ -9,27 +9,30 @@ let launch = true;
 function launchSlider(start, curSlider, curSlides){
     let slider = curSlider;
     let slides = curSlides;
-
-    let i = 0;
-    let length = slides.length;
-        setInterval(function(){ 
-          
-            if(i == slides.length) {
-                i = 0;
-                let last = slides[slides.length - 1];
-                last.classList.remove('active');
-                slider.appendChild(last);
-            }
-            slides[i].classList.add('active');
-            if(slides[i - 1]) {
-                let first = slides[i - 1];
-                first.classList.remove('active');
-                slider.appendChild(first);
-            }
-        
-            i++;            
-                    
-            }, 5000);
+    if(slider.classList.contains('playing')) {
+    
+        let i = 0;
+        let length = slides.length;
+            setInterval(function(){ 
+              
+                if(i == slides.length) {
+                    i = 0;
+                    let last = slides[slides.length - 1];
+                    last.classList.remove('active');
+                    slider.appendChild(last);
+                }
+                slides[i].classList.add('active');
+                if(slides[i - 1]) {
+                    let first = slides[i - 1];
+                    first.classList.remove('active');
+                    slider.appendChild(first);
+                }
+            
+                i++;            
+                        
+                }, 5000);
+    } else return;
+   
         
   
 }
@@ -44,7 +47,12 @@ const newsSlides = newsSlider.querySelectorAll('.news');
 launchSlider(true, newsSlider, newsSlides);
 
 function pauseSlider(activeSlider) {
-
+    if(activeSlider.classList.contains('main-slider')) {
+        console.log(activeSlider);
+        
+        console.log('pause');
+    }
+    activeSlider.classList.remove('playing');
     let slides = activeSlider.querySelectorAll('.slide');
     slides.forEach(slide => {
         if(!slide.classList.contains('active')) {
@@ -55,6 +63,7 @@ function pauseSlider(activeSlider) {
 }
 
 function playSlider(activeSlider) {
+    console.log(activeSlider);
     let slides = Array.from(activeSlider.children);
     slides.forEach(slide => {
             slide.classList.add('slide');
@@ -66,7 +75,7 @@ document.addEventListener('mouseover', function(e){
     let target = e.target;
     let sliderWrap = target.closest('.slider__wrap');
     if(sliderWrap) {
-        console.log(sliderWrap);
+        // console.log(sliderWrap);
         let slider = sliderWrap.querySelector('.slider');
         pauseSlider(slider);
     }
@@ -78,8 +87,31 @@ let sliders = doc.querySelectorAll('.slider');
             playSlider(activeSlider);
         });
         activeSlider.addEventListener('mouseover', function(){
-            pauseSlider(activeSlider);
+            // pauseSlider(activeSlider);
         });
     })
-
+    document.addEventListener('mousemove', function(){
+        showCoords(event);
+        }); 
+        function showCoords(event) {
+           var y = event.clientY;
+          var coords = "Y coords: " + y;
+        let scroll = window.scrollY;
+        // console.log('scroll + y' + ':', y);
+        let slider = document.querySelector('.main-slider');
+        let sliderRect = slider.getBoundingClientRect();
+        let top = sliderRect.top + scroll;
+        let bottom = Math.round(sliderRect.top + sliderRect.height);
+        // console.log('top, bottom' + ':' + top, bottom);
+        let inside;
+        if(y >= top && y<= bottom) {
+        inside == true;
+        } else {
+        inside = false;
+        }
+        if(inside) {
+        pauseSlider(slider);
+        }
+        }
+       
 
