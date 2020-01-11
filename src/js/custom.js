@@ -1,36 +1,38 @@
 let doc = document;
-
-$(doc).ready(function () {
-    $('.main-slider').slick({
-
-        dots: false,
-        arrows: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        speed: 500,
-        fade: false,
-        cssEase: 'ease-in-out',
-        adaptiveHeight: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+let mainSlider = doc.querySelector('.main-slider'); 
     
-        prevArrow: $('.prev'),
-        nextArrow: $('.next'),
-        // responsive: [
-        //     {
-        //         breakpoint: 769,
-        //         settings: {
-        //             arrows: false
-    
-        //         }
-        //     }
-        // ]
+    doc.addEventListener('DOMContentLoaded', function (event) {
+        $(mainSlider).slick({
+
+            dots: false,
+            arrows: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 500,
+            fade: false,
+            cssEase: 'ease-in-out',
+            adaptiveHeight: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            // responsive: [
+            //     {
+            //         breakpoint: 769,
+            //         settings: {
+            //             arrows: false
+        
+            //         }
+            //     }
+            // ]
+        });
     });
+   
     
-});
 
-$('.main-slider').slick('refresh');
+    $(mainSlider).slick('refresh');
 
 // // events();
 // let launch = true;

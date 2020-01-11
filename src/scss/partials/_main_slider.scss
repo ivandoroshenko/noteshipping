@@ -49,16 +49,6 @@
         max-width: 100%;
     }
     
-    .slide {
-        min-width: 100%;
-        transition: $all;
-    }
-
-    .slide.active {
-        margin-left: -100%;
-    }
-
-     
 }
 
 .main-slider__wrap {
