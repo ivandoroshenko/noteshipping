@@ -12,14 +12,17 @@ const rigger = require('gulp-rigger');
 
 const jsFiles = [
    './src/js/libs.js',
-   './src/js/custom.js'
+   './src/js/jquery.slim.min.js',
+   './src/js/slick.min.js',
+   './src/js/custom.js',
+   './src/js/custom-slider.js'
 ]
 
 async function styles() {
    return gulp.src('./src/scss/main.scss')
    .pipe(sourcemaps.init())
    .pipe(plumber())
-   .pipe(sass().on('error', sass.logError))
+   .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
    .pipe(autoprefixer({
       browsers: ['last 10 versions'],
       cascade: false

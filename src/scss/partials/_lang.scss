@@ -12,8 +12,8 @@
 }
 
 .lang__item {
-    display: none;
     margin: 0 5px;
+    transition: $all;
 
     &.active {
         display: block;
@@ -23,6 +23,11 @@
             pointer-events: none;
             opacity: 1;
         }
+    }
+
+    &:not(.active) {
+        visibility: hidden;
+
     }
 
 }
@@ -38,7 +43,7 @@
 .lang:hover {
     
     .lang__item {
-        display: block;
+        visibility: visible;
     }
 
 } 
