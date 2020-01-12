@@ -11,8 +11,19 @@ $footer: #15645f99;
 
 // transitions
 $all: all .5s ease-in-out;
+$slider: all 1s ease-in-out;
 $color: color .3s ease-in-out;
 $opacity:  opacity .3s ease-in-out;
 $dropdown:  opacity .3s ease-in-out,
             top .3s ease-in-out;
 $exo: 'Exo 2', sans-serif;
+
+// news-slider
+$sliderHeight: 166px;
+
+@media screen and(max-width: 1024px) {
+    $sliderHeight: 136px;
+}
+@media screen and(max-width: 768px) {
+    $sliderHeight: 159px;
+}

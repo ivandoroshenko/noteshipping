@@ -3,33 +3,57 @@
     position: relative;
     top: -50px;
 
+    @media screen and(max-width: 1024px) {
+        position: static;
+    }
+
     .container {
         background: $lightGray;
         padding: 26px;
+
+        @media screen and(max-width: 1024px) {
+            padding: 20px;
+        }
+
+        @media screen and(max-width: 768px) {
+            max-width: 320px;
+        }
     }
 }
 
 .news__slider {
-    max-height: 166px;
+    max-height: $sliderHeight;
     overflow: hidden;
+
 }
 
 .news {
-    transition: $all;
-    max-height: 100%;
+    transition: $slider;
+    height: $sliderHeight;
+    overflow: hidden;
 
     &.slide.active {
-        margin-top: -166px;
+        margin-top: -$sliderHeight;
     }
 
     p {
         color: $title;
+        margin: 16px 0;
+
+        @media screen and(max-width: 768px) {
+            margin: 0 0 10px;
+        }
     }
     
 }
 
 .news__title {
     font-size: 1.62rem;
+
+    @media screen and(max-width: 1024px) {
+        font-size: 1.1rem;
+
+    }
 }
 
 .news-teaser {

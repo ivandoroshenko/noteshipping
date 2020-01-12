@@ -9,7 +9,7 @@ let mainSlider = doc.querySelector('.main-slider');
             infinite: true,
             autoplay: true,
             autoplaySpeed: 5000,
-            speed: 500,
+            speed: 1000,
             fade: false,
             cssEase: 'ease-in-out',
             adaptiveHeight: false,
