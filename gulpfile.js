@@ -14,7 +14,8 @@ const jsFiles = [
    './src/js/libs.js',
    './src/js/jquery.slim.min.js',
    './src/js/slick.min.js',
-   './src/js/custom.js'
+   './src/js/custom.js',
+   './src/js/custom-slider.js'
 ]
 
 async function styles() {
