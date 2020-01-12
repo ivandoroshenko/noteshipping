@@ -20,6 +20,10 @@
             fill: #fff;
         }
 
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+
     }
 
     .prev {
@@ -39,24 +43,54 @@
     }
 
 
-.slider.main-slider {
+.main-slider {
     overflow: hidden;
     display: flex;
     max-width: 100%;
+
+    &__slide {
+        position: relative;
+    }
+
+
     
-    img,
-    .slide {
+    img {
         max-width: 100%;
+
+        @media screen and(max-width: 1024px){
+            height: 30vw;
+        }
     }
+
+    .slide-title {
+        position: absolute;
+        top: 30%;
+        right: 20%;
+        font-size: 2.5rem;
+        color: $lightGray;
+        max-width: 30vw;
+        text-transform: uppercase;
+        text-shadow: 0px 1px 2px #000;
+        letter-spacing: 1.5px;
+
+        @media screen and(max-width: 1024px){
+            max-width: 40vw;
+        }
+
+        @media screen and(max-width: 768px){
+            font-size: 1.5rem;
+            right: 50%;
+            top: 20%;
+            width: auto;
+            max-width: 300px;
+            transform: translateX(50%);
+            min-width: 250px;
+        }
+    }
+    
     
 }
 
-.main-slider__wrap {
-    .path {
-        fill: #fff;
-    }
-
-}
 
 
 

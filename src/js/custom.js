@@ -8,7 +8,7 @@ let mainSlider = doc.querySelector('.main-slider');
             arrows: true,
             infinite: true,
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 5000,
             speed: 500,
             fade: false,
             cssEase: 'ease-in-out',
@@ -18,15 +18,21 @@ let mainSlider = doc.querySelector('.main-slider');
         
             prevArrow: $('.prev'),
             nextArrow: $('.next'),
-            // responsive: [
-            //     {
-            //         breakpoint: 769,
-            //         settings: {
-            //             arrows: false
+            responsive: [
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        arrows: false
         
-            //         }
-            //     }
-            // ]
+                    }
+                    
+                }/* ,
+                {
+                    breakpoint: 768,
+                    settings: unslick
+                    
+                } */
+            ]
         });
     });
    
@@ -34,8 +40,6 @@ let mainSlider = doc.querySelector('.main-slider');
 
     $(mainSlider).slick('refresh');
 
-// // events();
-// let launch = true;
 // function launchSlider(start, curSlider, curSlides){
 //     let slider = curSlider;
 //     let slides = curSlides;
