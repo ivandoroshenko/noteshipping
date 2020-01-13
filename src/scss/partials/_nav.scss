@@ -28,4 +28,11 @@
 .nav__link {
     font-family: $nav;
     font-weight: 400;
+    padding: 0 15px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $gray;
+    display: block;
+    font-weight: bold;
 }

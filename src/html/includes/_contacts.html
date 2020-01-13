@@ -1,22 +1,30 @@
 <section class="contacts">
-    <div class="contacts-info">
-        <h3 class="contacts-info__title">
-                Зв'язатись з нами
-        </h3>
-        <p class="contacts-info__text">
-            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  
-        </p>
-        <div class="contacts__info-address">
-            <p></p>
-            <address>
-                <a href="+3809512331234">123 - 123 - 1234</a>
-            </address>
+    <div class="container flex-container">
+
+        <div class="contacts-info">
+            <h3 class="contacts-info__title">
+                    Зв'язатись з нами
+            </h3>
+            <p class="contacts-info__text">
+                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  
+            </p>
+            <div class="contacts__info-address">
+                <h3 class="info-title">Діміра Шиппінг</h3>
+                <p class="address-text">54039, Вулиця 8 березня 34А. Офіс 305. м. Миколаїв, Україна</p>
+                <address>
+                    <a class="phone-link" href="tel:+3809512331234">+380 981 855 015</a>
+                </address>
+            </div>
         </div>
+
+        <form action="#" class="contact-form">
+            <div class="name-wrap">
+                <input type="text" class="name" name="address" id="address" placeholder="Адреса">
+                <input type="text" class="name" name="name" id="name" placeholder="Ім'я">
+            </div>
+            <textarea name="message" id="message" placeholder="Повідомлення"></textarea>
+            <button type="submit" id="contacts-submit" class="submit-button" >Надіслати</button>
+            <button type="reset" class="form-reset">Скинути</button>
+        </form>
     </div>
-    <form action="#" class="contacts-form">
-        <input type="text" name="address" id="address" placeholder="Адреса">
-        <input type="text" name="name" id="name" placeholder="Ім'я">
-        <input type="text" name="message" id="message" placeholder="Повідомлення">
-        <button type="submit" id="contacts-submit">Надіслати</button>
-    </form>
 </section>

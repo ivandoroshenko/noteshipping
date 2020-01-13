@@ -28,7 +28,7 @@ header .container {
     align-items: flex-end;
 }
 
-.header__phone-link {
+.phone-link {
     text-decoration: none;
     color: $gray;
     font-family: $nav;
@@ -39,25 +39,11 @@ header .container {
         color: #000;
     }
 
-    @include underline;
-
     span {
         font-weight: bold;
         margin-right: 15px;
         font-size: 0.9rem;
     }
-}
-
-.header__nav-link {
-    padding: 0 15px;
-    line-height: 48px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $gray;
-    display: block;
-    font-weight: bold;
-
-   
 }
 
 .top-block {

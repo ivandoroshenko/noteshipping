@@ -1,0 +1,127 @@
+.contacts {
+    padding-bottom: 50px;
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+  
+
+    .contacts-info {
+        width: 45%;
+
+        .contacts-info__title {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: normal;
+            color: $title;
+        }
+
+        .contacts-info__text {
+            color: $gray;
+            line-height: 1.5;
+            position: relative;
+            padding-bottom: 10px;
+
+            &:after {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 0;
+                width: 100px;
+                border-top: 1px solid #66a0ff;
+            }
+        }
+
+        .contacts__info-address {
+            
+            color: $gray;
+
+            p {
+                margin-bottom: 5px;
+            }
+
+            .address-text,
+            .phone-link {
+                &:before {
+                    content: "";
+                    margin-right: 10px;
+                    width: 14px;
+                    height: 14px;
+                    display: inline-block;
+                }
+            }
+            
+            .address-text {
+                &:before {
+                    background: url('../img/map-pin-solid.svg') center center no-repeat;
+                }
+            }
+
+            .phone-link {
+                color: $gray;
+                font-weight: bold;
+
+                &:before {
+                    background: url('../img/phone-solid.svg') center center no-repeat;
+                }
+            }
+        } 
+    }
+    
+}
+
+.contact-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+    input[type="text"],
+    textarea {
+        border: 1px solid $gray;
+        padding: 10px 5px;
+        
+    }
+
+
+
+    .name-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    input.name {
+        width: calc(50% - 5px);
+    }
+
+    textarea {
+        min-height: 100px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    button {
+        border: none;
+        margin-left: auto;
+        padding: 10px 0;
+        color: $gray;
+        background:$lightGray;
+
+    }
+
+    .submit-button {
+        min-width: 182px;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    .form-reset {
+        min-width: 100px;
+        font-size: 0.9rem;
+    }
+
+    
+
+}
