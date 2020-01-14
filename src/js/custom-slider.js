@@ -1,4 +1,6 @@
 function launchSlider(curSlider, curSlides){
+    console.log('launchslider');
+    
     let slider = curSlider;
     let slides = curSlides;
     

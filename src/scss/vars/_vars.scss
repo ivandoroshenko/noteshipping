@@ -21,10 +21,5 @@ $exo: 'Exo 2', sans-serif;
 
 // news-slider
 $sliderHeight: 166px;
-
-@media screen and(max-width: 1024px) {
-    $sliderHeight: 136px;
-}
-@media screen and(max-width: 767px) {
-    $sliderHeight: 159px;
-}
+$sliderHeightTablet: 136px;
+$sliderHeightMob: 159px;
