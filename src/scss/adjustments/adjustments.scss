@@ -34,7 +34,14 @@ html, body {
 
 .d-none {
     display: none;
+
+    &--mob {
+        @media screen and(max-width: 767px) {
+           display: none;
+        }
+    }
 }
+
 
 *,
 *:before,
@@ -62,4 +69,8 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.o-hidden {
+    overflow: hidden;
 }

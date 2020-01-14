@@ -28,7 +28,7 @@ footer {
 
             &:hover {
                 svg {
-                    fill: $title;
+                    fill: $darkGray;
                     
                 }
             }
@@ -84,7 +84,7 @@ footer {
             font-weight: bold;
 
             &:hover {
-                color: $title;
+                color: $darkGray;
             }
         }
     }

@@ -9,11 +9,12 @@
 // toggle icon
 
 #toggle-icon {
-    top: 10px;
-    position: fixed;
+    top: 15px;
+    position: absolute;
     right: 10px;
     z-index: 2;
-    margin: 0;    padding: 0; 
+    margin: 0;  
+    padding: 0; 
     width: 30px;
     height: auto;
     transition: .5s ease-in-out;
@@ -23,7 +24,7 @@
         position: absolute;
         height: 5px;
         width: 100%;
-        background: $title;
+        background: $darkGray;
         border-radius: 9px;
         opacity: 1;
         left: 0;
@@ -45,6 +46,7 @@
     }
 
     &.open span {
+        background: $lightGray;
         &:nth-child(1) {
             top: 18px;
             width: 0%;
@@ -120,10 +122,17 @@ header .container {
         background-color: $lightGray;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px;
+        padding: 10px 35px;
         z-index: 2;
+        transition: $all;
+
+        &.hidden {
+            right: -100%;
+        }
 
     }
+
+    
 }
 
 address {
@@ -142,6 +151,20 @@ address {
     @media screen and(max-width: 767px){
         font-size: 1.2rem;
         line-height: 2;
+
+        position: relative;
+        padding-left: 25px;
+        &:before {
+            content: "";
+            margin-right: 10px;
+            width: 14px;
+            height: 14px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url('../img/phone-solid.svg') center center no-repeat;
+        }
     }
 
     &:hover {
@@ -161,13 +184,7 @@ address {
     @media screen and(max-width: 767px){
         flex-direction: column-reverse;
         align-items: flex-start;
-        margin-bottom: 10px;
-    }
-}
-
-.header__nav-list {
-    @media screen and(max-width: 767px){
-      border-top: 1px solid $title;
+        margin-bottom: 5px;
     }
 }
 
@@ -191,6 +208,27 @@ address {
     @media screen and(max-width: 767px){
         flex-direction: row-reverse;
         align-items: flex-end;
+        position: relative;
+        padding-left: 20px;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 15px;
+            height: 15px;
+            background: url('../img/globe-europe-solid.svg') center center no-repeat;
+            background-size: cover;
+            top: 50%;
+            margin-top: -1px;
+            transform: translateY(-50%);
+        }
     }
 }
 
+.d-none--mob {
+    @media screen and(max-width: 767px){
+        display: none;
+    }
+    
+}

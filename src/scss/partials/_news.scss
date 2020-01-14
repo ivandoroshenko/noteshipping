@@ -64,7 +64,7 @@
     }
 
     p {
-        color: $title;
+        color: $darkGray;
         margin: 10px 0;
 
         @media screen and(max-width: 414px) {
@@ -93,13 +93,13 @@
     flex-direction: column;
 
     .news-teaser__text {
-        color: $title;
+        color: $darkGray;
     }
     
     .more {
         font-size: 0.8rem;
         align-self: flex-end;
-        color: $title;
+        color: $darkGray;
     }
 }
 

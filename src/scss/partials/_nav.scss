@@ -55,4 +55,8 @@
 
 .header__nav-link {
     padding-left: 0;
+
+    @media screen and(max-width: 768px){
+        font-size: 1.4rem;
+    }
 }

@@ -18,7 +18,7 @@
         font-size: 2rem;
         margin-bottom: 10px;
         font-weight: normal;
-        color: $title;
+        color: $darkGray;
     }
 
     .contacts-info {
@@ -64,6 +64,7 @@
                     display: block;
                     position: absolute;
                     left: 0;
+                    top: 0;
                 }
             }
             
