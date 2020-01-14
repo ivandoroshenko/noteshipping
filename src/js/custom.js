@@ -20,7 +20,7 @@ let mainSlider = doc.querySelector('.main-slider');
             nextArrow: $('.next'),
             responsive: [
                 {
-                    breakpoint: 1025,
+                    breakpoint: 1030,
                     settings: {
                         arrows: false
         
