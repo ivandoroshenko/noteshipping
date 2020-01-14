@@ -19,6 +19,7 @@ footer {
                 width: 30px;
                 height: 30px;
                 fill: $gray;
+                transition: $fill;
             }
 
             &:hover {
