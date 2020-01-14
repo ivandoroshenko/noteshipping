@@ -1,21 +1,31 @@
 .contacts {
     padding-bottom: 50px;
 
+    @media screen and (max-width: 767px) {
+        padding-bottom: 30px;
+    }
+
     .flex-container {
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
     }
     
-  
+    .contacts__title {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-weight: normal;
+        color: $title;
+    }
 
     .contacts-info {
         width: 45%;
 
-        .contacts-info__title {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            font-weight: normal;
-            color: $title;
+        @media screen and (max-width: 767px) {
+            width: 100%;
         }
 
         .contacts-info__text {
@@ -44,16 +54,21 @@
 
             .address-text,
             .phone-link {
+                position: relative;
+                padding-left: 25px;
                 &:before {
                     content: "";
                     margin-right: 10px;
                     width: 14px;
                     height: 14px;
-                    display: inline-block;
+                    display: block;
+                    position: absolute;
+                    left: 0;
                 }
             }
             
             .address-text {
+
                 &:before {
                     background: url('../img/map-pin-solid.svg') center center no-repeat;
                 }
@@ -76,6 +91,15 @@
     width: 40%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: -40px;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        order: -1;
+        top: 0;
+        margin-bottom: 15px;
+    }
 
     input[type="text"],
     textarea {
@@ -90,10 +114,25 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
     }
 
     input.name {
         width: calc(50% - 5px);
+
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        &:first-child {
+            @media screen and (max-width: 767px) {
+                margin-bottom: 10px;
+            }
+        }
     }
 
     textarea {
@@ -115,6 +154,7 @@
         min-width: 182px;
         margin-bottom: 20px;
         font-size: 1.2rem;
+
     }
 
     .form-reset {
