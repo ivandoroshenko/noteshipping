@@ -11,12 +11,10 @@ const browserSync = require('browser-sync').create();
 const rigger = require('gulp-rigger');
 
 const jsFiles = [
-   './src/js/libs.js',
    './src/js/jquery.slim.min.js',
    './src/js/slick.min.js',
-   './src/js/custom.js',
-   './src/js/slider.js',
-   './src/js/toggle.js'
+   './src/js/slick.js',
+   './src/js/slider.js'
 ]
 
 async function styles() {
@@ -50,7 +48,7 @@ function images () {
 function scripts() {
    return gulp.src(jsFiles)
    .pipe(sourcemaps.init())
-   .pipe(concat('script.js'))
+   // .pipe(concat('script.js'))
    .pipe(uglify())
    .pipe(gulp.dest('./build/js'))
    .pipe(browserSync.reload({ stream: true }))

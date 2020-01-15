@@ -27,7 +27,7 @@
         }
 
         @media screen and(max-width: 767px) {
-            padding-bottom: 20px;
+            padding-bottom: 10px;
         }
     }
 }
@@ -96,12 +96,23 @@
 
     .news-teaser__text {
         color: $darkGray;
+
+        @media screen and(max-width: 414px) {
+            font-size: 1rem;
+    
+        }
     }
     
     .more {
         font-size: 0.8rem;
         align-self: flex-end;
         color: $darkGray;
+        text-align: right;
+
+        @media screen and(max-width: 414px) {
+            font-size: 1rem;
+    
+        }
     }
 }
 

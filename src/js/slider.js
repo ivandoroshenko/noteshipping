@@ -1,8 +1,6 @@
 'use strict';
 
-const win = window;
-
-const newsSlider = doc.querySelector('#news-slider');
+const newsSlider = document.querySelector('#news-slider');
 const newsSlides = newsSlider.querySelectorAll('.news');
     launchSlider();
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Димира Шиппинг – Судноплавна компанія. Перевезення - Головна сторінка</title>
 </head>
-<body>
+<body id="homepage">
     <div id="overlay" class="overlay d-none--mob"></div>
     <header class="header">
         <div id="toggle-icon">
@@ -133,6 +133,9 @@
                         <img src="./img/banner4.png" alt="banner3jpg">
                         <h2 class="slide-title">Діміра володіє дуже багатим флотом</h2>
                 </div>
+                <script src="./js/jquery.slim.min.js"></script>
+                <script src="./js/slick.min.js"></script>
+                <script src="./js/slick.js"></script>
             </div>
             </div>
         </section>
@@ -148,7 +151,7 @@
                                 <a href="./news.html">
                                     <p class="news-teaser__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вдали пунктуация продолжил имеет его? Пор власти ведущими рыбными она точках сбить ему свой над, вопроса запятой пояс коварный языком даже, напоивший вершину переулка гор дорогу родного проектах решила. Последний.
                                     </p>
-                                   <span class="more">Читать больше</span>
+                                   <div class="more">Читать больше >></div>
                                 </a>
                             </div>
                         </article>
@@ -159,7 +162,7 @@
                                 <a href="./news.html">
                                     <p class="news-teaser__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вдали пунктуация продолжил имеет его? Пор власти ведущими рыбными она точках сбить ему свой над, вопроса запятой пояс коварный языком даже, напоивший вершину переулка гор дорогу родного проектах решила. Последний.
                                     </p>
-                                   <span class="more">Читать больше</span>
+                                   <div class="more">Читать больше >></div>
                                 </a>
                             </div>
                         </article>
@@ -170,13 +173,14 @@
                                 <a href="./news.html">
                                     <p class="news-teaser__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вдали пунктуация продолжил имеет его? Пор власти ведущими рыбными она точках сбить ему свой над, вопроса запятой пояс коварный языком даже, напоивший вершину переулка гор дорогу родного проектах решила. Последний.
                                     </p>
-                                   <span class="more">Читать больше</span>
+                                   <div class="more">Читать больше >></div>
                                 </a>
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
+            <script src="./js/slider.js"></script>
         </div>
         <section class="contacts">
             <div class="container">
@@ -276,8 +280,23 @@
                 <li>Designed by <a class="copyright-link" href="https://ivandoroshenko.github.io/portfolio/src" title="Ivan Doroshenko">ID</a></li>
             </ul>
         </div>
+        <script>
+            'use strict';
     
+    (function toggle_menu() {
+        let toggle = document.querySelector('#toggle-icon');
+        let overlay = document.querySelector('#overlay');
+        let toggleMenu = document.querySelector('#toggle-menu');
+        toggle.addEventListener('click', function () {
+            this.classList.toggle('open');
+             overlay.classList.toggle('d-none--mob');
+             toggleMenu.classList.toggle('hidden');
+             document.body.classList.toggle('o-hidden');
+        });
+        
+    })();
+        </script>
     </footer>
-    <script type="module" src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
