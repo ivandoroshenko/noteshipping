@@ -9,6 +9,7 @@
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .lang__item {
@@ -31,7 +32,7 @@
 
     &:not(.active) {
         visibility: hidden;
-
+        transform: translateX(-100px);
     }
 
 }
@@ -53,6 +54,7 @@
     
     .lang__item {
         visibility: visible;
+        transform: none;
     }
 
 } 

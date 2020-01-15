@@ -7,7 +7,7 @@
         padding: 0;
         margin: 0;
         position: absolute;
-        width: auto;
+        width: 280px;
         padding-top: 18px;
         top: 80%;
         opacity: 0;
@@ -54,8 +54,10 @@
     }
 
     .nav__link {
-        max-width: 1024px;
-        pointer-events: none;
+        @media screen and(max-width: 1024px) {
+            pointer-events: none;
+         }
+        
     }
     
 }

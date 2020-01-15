@@ -36,7 +36,7 @@ async function styles() {
 }
 
 async function html() {
-   gulp.src(['./src/html/partials/*.html']) 
+   gulp.src(['./src/html/pages/*.html']) 
    .pipe(rigger()) 
    .pipe(gulp.dest('./build/'))
    .pipe(browserSync.reload({ stream: true }))

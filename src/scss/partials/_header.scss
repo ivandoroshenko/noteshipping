@@ -4,6 +4,10 @@
     width: 100vw;
     height: 100vh;
     z-index: 1;
+
+    @media screen and(min-width: 768px){
+        display: none;
+    }
 }
 
 // toggle icon
@@ -12,12 +16,16 @@
     top: 15px;
     position: absolute;
     right: 10px;
-    z-index: 2;
+    z-index: 3;
     margin: 0;  
     padding: 0; 
     width: 30px;
     height: auto;
     transition: .5s ease-in-out;
+
+    @media screen and(min-width: 768px){
+        display: none;
+    }
     
     span {
         display: block;
@@ -92,15 +100,10 @@ header .container {
 }
 
   
-
-.header__logo {
-    display: flex;
-    align-items: flex-end;
-}
-
 .header__logo-img {
     max-height: 100px;
     object-fit: cover;
+    margin-right: 20px;
 
     @media screen and(max-width: 1024px){
         max-height: 70px;
