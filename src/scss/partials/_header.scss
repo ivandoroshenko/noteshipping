@@ -191,44 +191,6 @@ address {
     }
 }
 
-.nav__item.flat {
-    
-    .nav__link {
-        position: relative;
-        transition: $color;
-
-
-    @media screen and(min-width: 768px){
-        @include underline;
-        @include underline-nav;
-    }
-       
-    }
-
-}
-
-.lang__list {
-    @media screen and(max-width: 767px){
-        flex-direction: row-reverse;
-        align-items: flex-end;
-        position: relative;
-        padding-left: 20px;
-        
-        &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            width: 15px;
-            height: 15px;
-            background: url('../img/globe-europe-solid.svg') center center no-repeat;
-            background-size: cover;
-            top: 50%;
-            margin-top: -1px;
-            transform: translateY(-50%);
-        }
-    }
-}
-
 .d-none--mob {
     @media screen and(max-width: 767px){
         display: none;

@@ -16,14 +16,7 @@
     position: relative;
 
     & + .nav__item:before {
-        position: absolute;
-        content: "";
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 1em;
-        width: 2px;
-        background: #367a79;
+        @include divider;
 
         @media screen and(max-width: 767px){
             display: none;
@@ -31,6 +24,22 @@
     }
 
   
+}
+
+.nav__item.flat {
+    
+    .nav__link {
+        position: relative;
+        transition: $color;
+
+
+    @media screen and(min-width: 768px){
+        @include underline;
+        @include underline-nav;
+    }
+       
+    }
+
 }
 
 .nav__link {

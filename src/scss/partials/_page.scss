@@ -1,0 +1,46 @@
+.descr {
+    padding: 50px 0;
+
+    .descr__title {
+        font-size: 2rem;
+        color: $gray;
+        font-weight: bold;
+        width: 70%;
+        margin-left: auto;
+    }
+
+    aside {
+        width: 30%;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    .side-title {
+        color: $darkGray;
+    }
+
+    .page-nav__list {
+        
+        a {
+            color: $gray;
+            line-height: 1;
+            text-transform: uppercase;
+            transition: $all;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+
+            @include underline;
+
+            padding: 0;
+            display: inline-block;
+            
+        }
+
+        li + li a {
+            margin-top: 10px;
+        }
+    }
+    
+}

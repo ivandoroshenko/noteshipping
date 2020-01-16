@@ -8,7 +8,7 @@
         transform: translateX(-50%);
         bottom: -3px;
         background-color: $gray;
-        height: 1px;
+        height: 2px;
         width: 0;
         transition: $all;
     }
@@ -33,4 +33,15 @@
     &:hover:before {
         width: calc(100% - 20px);    
     }
+}
+
+@mixin divider {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1em;
+    width: 2px;
+    background: #367a79;
 }
