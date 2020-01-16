@@ -3,7 +3,7 @@
     position: relative;
     top: -50px;
     margin-bottom: -50px;
-    
+    display: flex;
 
     @media screen and(max-width: 1024px) {
         top: -30px;
@@ -93,13 +93,15 @@
 .news-teaser {
     display: flex;
     flex-direction: column;
+    max-width: 800px;
 
     .news-teaser__text {
         color: $darkGray;
+        position: relative;
 
         @media screen and(max-width: 414px) {
             font-size: 1rem;
-    
+            
         }
     }
     

@@ -91,6 +91,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    flex-direction: row;
 }
 
 .header__column_left {

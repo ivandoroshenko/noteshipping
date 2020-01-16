@@ -1,7 +1,7 @@
 @mixin underline {
     position: relative;
 
-    &:before {
+    &:after{
         position: absolute;
         content: "";
         left: 50%;
@@ -11,12 +11,16 @@
         height: 2px;
         width: 0;
         transition: $all;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
 
     &:hover {
         color: #000;
         
-        &:before {
+        &:after {
             width: 100%;
         }
         

@@ -4,15 +4,6 @@
     @media screen and (max-width: 767px) {
         padding: 30px 0;
     }
-
-    .container_flex {
-        display: flex;
-        justify-content: space-between;
-
-        @media screen and (max-width: 767px) {
-            flex-direction: column;
-        }
-    }
     
     .side__title {
         font-size: 2rem;
