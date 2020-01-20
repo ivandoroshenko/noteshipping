@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Димира Шиппинг – Судноплавна компанія. Перевезення - Головна сторінка</title>
+</head>
+<body>
+    //= ../includes/_header.html
+    <main>
+    //= ../includes/_blog.html
+    </main>
+    //= ../includes/_footer.html
+    <script>
+        function changeView (view) {
+        let postWrap = document.querySelector('.post-wrap');
+        // let postView = document.querySelector('.post-view');
+        let gridIcon = document.querySelector('.post-view__item.grid');
+        let listIcon = document.querySelector('.post-view__item.list');
+        switch (view) {
+                case 'list':
+                postWrap.classList.remove('grid');
+                gridIcon.classList.remove('active');
+                listIcon.classList.add('active');
+                        break;
+                case 'grid':
+                        postWrap.classList.add('grid');
+                        gridIcon.classList.add('active');
+                        listIcon.classList.remove('active');
+                        break;
+        }        
+    };
+    </script>
+</body>
+</html>

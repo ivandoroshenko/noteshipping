@@ -10,6 +10,7 @@ html, body {
 
 .intro {
     background-color: $gray;
+    padding: 0;
 }
 
 *,
@@ -35,6 +36,8 @@ html, body {
 .container_flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
@@ -44,6 +47,14 @@ html, body {
 
 .justify-start {
     justify-content: flex-start;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.ml-auto {
+    margin-left: auto;
 }
 
 .d-none {
@@ -77,6 +88,14 @@ a {
 
 address {
     font-style: normal;
+}
+
+section {
+    padding: 50px 0;
+
+    @media screen and(max-width: 767px) {
+        padding: 30px 0;
+     }
 }
 
 ul {

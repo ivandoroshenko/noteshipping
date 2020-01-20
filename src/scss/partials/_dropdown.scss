@@ -13,7 +13,7 @@
         opacity: 0;
         transition: $dropdown;
         pointer-events: none;
-        z-index: 1;
+        z-index: 3;
 
         @media screen and(max-width: 1024px) {
             min-width: 100px;
@@ -36,6 +36,12 @@
         
     }
 
+    .dropdown__item {
+        &:hover {
+            background: $darkGray;
+        }
+    }
+
    .dropdown__link {
         text-decoration: none;
         line-height: 48px;
@@ -49,7 +55,9 @@
         transition: $all;
 
         &:hover {
-            background: rgba(255, 255, 255, 1);
+            // background: rgba(255, 255, 255, 1);
+            background: $darkGray;
+            color: $lightGray;
         }
     }
 

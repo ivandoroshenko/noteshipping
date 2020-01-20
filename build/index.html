@@ -48,9 +48,12 @@
                         <li class="header__nav-item nav__item flat">
                             <a href="about_us.html" class="header__nav-link nav__link">Про нас</a>
                         </li>
-                        <li class="header__nav-item nav__item dropdown">
+                        <li class="header__nav-item nav__item flat">
+                            <a href="blog.html" class="header__nav-link nav__link">Новини</a>
+                        </li>
+                        <li class="header__nav-item nav__item flat"> <!-- change to dropdown and uncomment before for nested list -->
                             <a href="fleet.html" class="header__nav-link nav__link">Флот</a>
-                            <ul class="dropdown__list">
+                            <!-- <ul class="dropdown__list">
                                 <li class="dropdown__item">
                                     <a href="fleet.html" class="dropdown__link">Буксири</a>
                                 </li>
@@ -60,7 +63,7 @@
                                 <li class="dropdown__item">
                                     <a href="fleet.html" class="dropdown__link">Катери</a>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li class="header__nav-item nav__item dropdown">
                             <a href="./services.html" class="header__nav-link nav__link">Послуги</a>
@@ -85,7 +88,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="header__nav-item nav__item flat">
+                        <li class="d-none header__nav-item nav__item flat">
                             <a href="partners.html" class="header__nav-link nav__link">наші партнери</a>
                         </li>
                         <li class="header__nav-item nav__item dropdown">
@@ -138,7 +141,6 @@
             </div>
         </section>
         <div class="news__block">
-            <!-- <h2 class="news__title">News</h2> -->
             <div class="container">
                 <div class="slider__wrap">
                     <div id="news-slider" class="news__slider slider" data-slider="true">
@@ -157,7 +159,7 @@
                             <h2 class="news__title"> 2 Димира шиппинг ждет пополнение во флоте</h2>
                             <p><span class="news__author">Создано Димира Шиппинг</span><time datetime="2019-12-05">05/12/2019</time></p>
                             <div class="news-teaser">
-                                <a href="./news.html">
+                                <a href="./blog.html">
                                     <p class="news-teaser__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вдали пунктуация продолжил имеет его? Пор власти ведущими рыбными она точках сбить ему свой над, вопроса запятой пояс коварный языком даже, напоивший вершину переулка гор дорогу родного проектах решила. Последний.
                                     </p>
                                    <div class="more">Читать больше >></div>
@@ -168,7 +170,7 @@
                             <h2 class="news__title"> 3 Димира шиппинг ждет пополнение во флоте</h2>
                             <p><span class="news__author">Создано Димира Шиппинг </span><time datetime="2019-12-05">05/12/2019</time></p>
                             <div class="news-teaser">
-                                <a href="./news.html">
+                                <a href="./blog.html">
                                     <p class="news-teaser__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вдали пунктуация продолжил имеет его? Пор власти ведущими рыбными она точках сбить ему свой над, вопроса запятой пояс коварный языком даже, напоивший вершину переулка гор дорогу родного проектах решила. Последний.
                                     </p>
                                    <div class="more">Читать больше >></div>
@@ -181,11 +183,12 @@
             <script src="./js/slider.js"></script>
         </div>
         <section class="contacts">
-            <div class="container">
-                <h3 class="side__title">Зв'язатись з нами</h3>
-            </div>
-            <div class="container container_flex">
+            <!-- <div class="container">
+              
+            </div> -->
+            <div class="container container_flex align-start">
                 <div class="contacts-info">
+                    <h3 class="side__title">Зв'язатись з нами</h3>
                     <p class="contacts-info__text">
                         Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  
                     </p>
@@ -261,7 +264,7 @@
                     <li class="footer__nav-item nav__item flat">
                         <a href="services.html" class="footer__nav-link nav__link">Послуги</a>
                     </li>
-                    <li class="footer__nav-item nav__item flat">
+                    <li class="d-none footer__nav-item nav__item flat">
                         <a href="partners.html" class="footer__nav-link nav__link">наші партнери</a>
                     </li>
                     <li class="footer__nav-item nav__item flat">

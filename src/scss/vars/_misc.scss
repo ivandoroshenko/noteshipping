@@ -6,7 +6,7 @@
         content: "";
         left: 50%;
         transform: translateX(-50%);
-        bottom: -3px;
+        bottom: 10px;
         background-color: $gray;
         height: 2px;
         width: 0;
@@ -21,21 +21,10 @@
         color: #000;
         
         &:after {
-            width: 100%;
+            width: calc(100% - 20px);   
         }
         
 
-    }
-}
-
-@mixin underline-nav {
-
-    &:before {
-        bottom: 10px;
-    }
-
-    &:hover:before {
-        width: calc(100% - 20px);    
     }
 }
 
