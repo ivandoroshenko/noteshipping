@@ -28,6 +28,22 @@
     }
 }
 
+@mixin underline-nav {
+
+    &:after {
+        bottom: -2px;
+    }
+
+    &:hover {
+        
+        &:after {
+            width: 100%;   
+        }
+        
+
+    }
+}
+
 @mixin divider {
     position: absolute;
     content: "";
