@@ -69,22 +69,22 @@
                             <a href="./services.html" class="header__nav-link nav__link">Послуги</a>
                             <ul class="dropdown__list">
                                 <li class="dropdown__item">
-                                    <a href="" class="dropdown__link">Буксирування</a>
+                                    <a href="./services.html" class="dropdown__link">Буксирування</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="" class="dropdown__link">Навантажувально-розвантажувальні роботи</a>
+                                    <a href="./services.html" class="dropdown__link">Навантажувально-розвантажувальні роботи</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="" class="dropdown__link">Перевезення</a>
+                                    <a href="./services.html" class="dropdown__link">Перевезення</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="" class="dropdown__link">Агентування</a>
+                                    <a href="./services.html" class="dropdown__link">Агентування</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="" class="dropdown__link">Екпедирування</a>
+                                    <a href="./services.html" class="dropdown__link">Екпедирування</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="" class="dropdown__link">Ремонт вантажних підйомних пристроїв</a>
+                                    <a href="./services.html" class="dropdown__link">Ремонт вантажних підйомних пристроїв</a>
                                 </li>
                             </ul>
                         </li>
@@ -111,8 +111,173 @@
         </div>
         </header>
     <main>
-        <section class="intro">
-         
+        <section class="tabs">
+        <div class="container">
+            <ul class="vessel-tabs">
+                <li class="tabs-item tug">
+                    <picture>
+                        <img src="../img/tug.png" alt="tug" class="tabs-img">
+                    </picture>
+                    <span class="tab-title">Буксири</span>
+                </li>
+                <li class="tabs-item barge active">
+                    <picture>
+                        <img src="../img/barge.png" alt="barge" class="tabs-img">
+                    </picture>
+                    <span class="tab-title">Баржі</span>
+                </li>
+                <li class="tabs-item crane">
+                    <picture>
+                        <img src="../img/crane.png" alt="crane" class="tabs-img">
+                    </picture>
+                    <span class="tab-title">Крани</span>
+                </li>
+                <li class="tabs-item loader">
+                    <picture>
+                        <img src="../img/loader.png" alt="loader" class="tabs-img">
+                    </picture>
+                    <span class="tab-title">Навантажувачі</span>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <table id="vessel-data" class="vessel-table">
+                <thead>
+                    <tr>
+                        <th>Name/Vessel Type</th>
+                        <th>Deadweight</th>
+                        <th>Class</th>
+                        <th>Length(m)</th>
+                        <th>Width(m)</th>
+                        <th>Draft max(m)</th>
+                        <th>Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tug d-none">
+                        <td>Буксир Сатурн / Антон Мазин</td>
+                        <td></td>
+                        <td>КМ+ЛУ5 III буксир</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="barge spb d-none">
+                        <td>Self-propellered DNL</td>
+                        <td>2000 tdw</td>
+                        <td>R3-IN</td>
+                        <td>101,5</td>
+                        <td>14,16</td>
+                        <td>2,4</td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="crane d-none">
+                        <td>Floating crane SPK 10/35</td>
+                        <td>35 tdw</td>
+                        <td>KM LZ 111 1</td>
+                        <td>36,52</td>
+                        <td>18,72</td>
+                        <td>1,95</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="barge ">
+                        <td>Non-self-propellered barge DM</td>
+                        <td>1000 tdw</td>
+                        <td>P 1,2</td>
+                        <td>38,25</td>
+                        <td>11,00</td>
+                        <td>3,17</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="barge ">
+                        <td>Non-self-propellered barge DM</td>
+                        <td>1000 tdw</td>
+                        <td>P 1,2</td>
+                        <td>38,25</td>
+                        <td>11,00</td>
+                        <td>3,17</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="barge ">
+                        <td>Non-self-propellered barge DM</td>
+                        <td>1000 tdw</td>
+                        <td>P 1,2</td>
+                        <td>38,25</td>
+                        <td>11,00</td>
+                        <td>3,17</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="loader d-none">
+                        <td>Loader SEM 656 D</td>
+                        <td>5 tdw</td>
+                        <td></td>
+                        <td>8,40</td>
+                        <td>2,89</td>
+                        <td></td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="loader d-none">
+                        <td>Bobcat</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="loader d-none">
+                        <td>Bobcat</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="loader d-none">
+                        <td>Bobcat</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <script>
+            let table = document.getElementById('vessel-data');
+            let tbody = table.querySelector('tbody');
+            let trs = tbody.querySelectorAll('tr');
+            let list = document.querySelector('.vessel-tabs');
+            let items = list.querySelectorAll('.tabs-item');
+            
+            items.forEach(element => {
+                    element.addEventListener('click', function(){
+                        items.forEach(function(item){
+                            item.classList.remove('active');
+                        });
+                        element.classList.add('active');
+                        let target = element.classList[1];
+                        console.log(target);
+                        
+                        trs.forEach(function(tr, index){
+                            if(tr.classList.contains(target)) {
+                                tr.classList.remove('d-none');
+                                console.log(index);
+                                tbody.prepend(tr);
+                            } else {
+                                tr.classList.add('d-none');
+                            }
+                        });
+                        
+                    });
+                });
+               
+        </script>
         </section>
 
     </main>
@@ -196,6 +361,5 @@
     })();
         </script>
     </footer>
-    <script type="module" src="./js/script.js"></script>
 </body>
 </html>

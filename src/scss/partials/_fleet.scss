@@ -1,0 +1,117 @@
+/* 
+#### 1. .vessel-tabs
+#### 2.  vessel table
+*/
+
+.vessel-tabs {
+    display: inline-flex;
+    list-style-type: none;
+    margin-bottom: 15px;
+    
+    background: #00616A;
+    justify-content: space-evenly;
+}
+
+.tabs-item {
+    text-align: center;
+    width: auto;
+    min-width: 110px;
+    flex-direction: column;
+    padding: 0 20px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: $all;
+    
+
+    &:hover {
+        background: #659B92;
+    }
+
+    
+
+    picture {
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.active {
+        background: #53BBAB;
+    }
+}
+
+.tabs-img {
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+    display: block;
+    // filter: invert(1);
+}
+
+.crane,
+.tug,
+.loader {
+    .tabs-img {
+        width: 50px;
+    }
+} 
+
+.tab-title {
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+// ### vessel table
+
+.vessel-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Roboto', sans-serif   ;
+    th,
+    td {
+        width: 12.5%;
+        text-align: left;
+        
+
+        &:first-child {
+            width: auto;
+            white-space: nowrap;
+        }
+    }
+
+    thead {
+        tr {
+            background: #7CB0B1;
+            border: none;
+            
+            th {
+                border: none;
+                font-size: 1rem;
+                color: #fff;
+                padding: 5px 6px;
+                
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            
+            &:not(.d-none):nth-child(odd) {
+                background: #cbdede;
+            }
+
+            td {
+                padding: 8px 6px;
+                font-size: 0.9rem;
+                &:first-child {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    
+}
+

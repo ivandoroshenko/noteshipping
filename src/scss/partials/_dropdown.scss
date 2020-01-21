@@ -17,6 +17,8 @@
 
         @media screen and(max-width: 1024px) {
             min-width: 100px;
+            right: 0;
+            top: 70%;
          }
         @media screen and(max-width: 767px) {
             display: none;
@@ -26,7 +28,7 @@
     &:hover {
         .dropdown__list {
             opacity: 1;
-            top: 100%;
+            // top: 100%;
             pointer-events: all;
 
             @media screen and(max-width: 1024px) {
