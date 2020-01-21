@@ -10,6 +10,10 @@
     
     background: #00616A;
     justify-content: space-evenly;
+
+    @media screen and(max-width: 767px) {
+        display: flex;
+     }
 }
 
 .tabs-item {
@@ -21,10 +25,19 @@
     text-align: center;
     cursor: pointer;
     transition: $all;
+
+    @media screen and(max-width: 767px) {
+        padding: 0 5px 10px;
+        min-width: unset;
+     }
     
 
     &:hover {
         background: #659B92;
+
+        @media screen and(max-width: 767px) {
+           background: transparent;
+         }
     }
 
     
@@ -79,6 +92,22 @@
             width: auto;
             white-space: nowrap;
         }
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+            @media screen and(max-width: 767px) {
+                display: none;
+             }
+             
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            @media screen and(max-width: 414px) {
+                display: none;
+             }
+        }
     }
 
     thead {
@@ -109,6 +138,7 @@
                 &:first-child {
                     text-transform: uppercase;
                 }
+
             }
         }
     }
