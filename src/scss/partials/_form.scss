@@ -1,0 +1,100 @@
+.application__form {
+
+    fieldset {
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    legend {
+        width: 100%;
+        color: $darkGray;
+        background: #C7D6D9;
+        font-weight: bold;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+    }
+
+    .formfield {
+        display: flex;
+        flex-flow: row wrap;
+        
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+            
+        }
+        
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    label {
+        width: 22%;
+        color: $darkGray;
+
+        @media screen and (max-width: 767px) {
+            width: auto;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+    }
+    input {
+        min-height: 30px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 1.3rem;
+        }
+
+    }
+    
+    input:not([type="file"]),
+    textarea {
+        border: none;
+        background: #eee;
+        padding: 3px 5px 3px 10px;
+        flex-grow: 1;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    textarea {
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+        padding-top: 10px;
+    }
+
+
+    select {
+        border: none;
+        background: #ebebeb;
+        padding: 5px 6px;
+        border-radius: 0;
+
+        @media screen and (max-width: 767px) {
+            font-size: 1.3rem;
+        }
+    }
+
+    textarea {
+        min-height: 175px;
+    }
+
+    .button-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        background: $darkGray;
+        color: $lightGray;
+        
+        @media screen and (max-width: 767px) {
+            font-size: 1.3rem;
+        }
+    }
+
+}
