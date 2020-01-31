@@ -1,0 +1,41 @@
+.error {
+    padding: 50px 0;
+
+    .container {
+        text-align: center;
+    }
+
+    .error__title {
+        font-size: 6rem;
+        margin-bottom: 30px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .error__subtitle {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $darkGray;
+
+        @media screen and(max-width: 414px){
+            font-size: 1.2rem;
+        }
+    }
+
+    .error__text {
+        color: $darkGray;
+        padding-bottom: 30px;
+        display: inline-block;
+        border-bottom: 1px solid $darkGray;
+
+    }
+    
+
+    .back-to-home-link {
+        @include form-submit;
+        display: inline-block;
+        padding: 10px 25px;
+    }
+
+}
+

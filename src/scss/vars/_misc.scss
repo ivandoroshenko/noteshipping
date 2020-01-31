@@ -54,3 +54,17 @@
     width: 2px;
     background: #367a79;
 }
+
+@mixin form-submit {
+        background-color: #00616A;
+        color: $lightGray;
+        
+        
+        @media screen and (max-width: 767px) {
+            font-size: 1.3rem;
+
+            &.form-reset {
+                font-size: 1.2rem;
+            } 
+        }
+}

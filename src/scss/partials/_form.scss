@@ -87,14 +87,8 @@
         display: flex;
         flex-direction: column;
     }
-
     button {
-        background: $darkGray;
-        color: $lightGray;
-        
-        @media screen and (max-width: 767px) {
-            font-size: 1.3rem;
-        }
+        @include form-submit;
     }
 
 }

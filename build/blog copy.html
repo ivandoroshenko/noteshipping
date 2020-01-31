@@ -111,175 +111,148 @@
         </div>
         </header>
     <main>
-        <section class="tabs">
-        <div class="container">
-            <ul class="vessel-tabs">
-                <li class="tabs-item tug">
-                    <picture>
-                        <img src="../img/tug.png" alt="tug" class="tabs-img">
-                    </picture>
-                    <span class="tab-title">Буксири</span>
-                </li>
-                <li class="tabs-item barge">
-                    <picture>
-                        <img src="../img/barge.png" alt="barge" class="tabs-img">
-                    </picture>
-                    <span class="tab-title">Баржі</span>
-                </li>
-                <li class="tabs-item crane">
-                    <picture>
-                        <img src="../img/crane.png" alt="crane" class="tabs-img">
-                    </picture>
-                    <span class="tab-title">Крани</span>
-                </li>
-                <li class="tabs-item loader">
-                    <picture>
-                        <img src="../img/loader.png" alt="loader" class="tabs-img">
-                    </picture>
-                    <span class="tab-title">Навантажувачі</span>
-                </li>
+    <section>
+            <div class="container container_flex">
+                    <h1 class="blog__title">
+                            Останні новини  
+                    </h1>
+            </div>
+            <!-- pagination -->
+            <div class="container container_flex">
+            <nav class="col full pagination">
+                    <ul>
+                    <li><span class="page-numbers prev inactive">Prev</span></li>
+                            <li><span class="page-numbers current">1</span></li>
+                            <li><a href="#" class="page-numbers">2</a></li>
+                    <li><a href="#" class="page-numbers">3</a></li>
+                    <li><a href="#" class="page-numbers">4</a></li>
+                    <li><a href="#" class="page-numbers">5</a></li>
+                    <li><a href="#" class="page-numbers">6</a></li>
+                    <li><a href="#" class="page-numbers">7</a></li>
+                    <li><a href="#" class="page-numbers">8</a></li>
+                    <li><a href="#" class="page-numbers">9</a></li>
+                            <li><a href="#" class="page-numbers next">Next</a></li>
+                    </ul>
+            </nav>
+            <ul class="post-view">
+    
+                    <li class="post-view__item list" onclick="changeView('list'); ">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list" class="svg-inline--fa fa-list fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg>
+                    </li>
+                    <li class="post-view__item grid active" onclick="changeView('grid');" >
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="th-large" class="svg-inline--fa fa-th-large fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M296 32h192c13.255 0 24 10.745 24 24v160c0 13.255-10.745 24-24 24H296c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24zm-80 0H24C10.745 32 0 42.745 0 56v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24zM0 296v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm296 184h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H296c-13.255 0-24 10.745-24 24v160c0 13.255 10.745 24 24 24z"></path></svg>
+                    </li>
             </ul>
-        </div>
-        <div class="container">
-            <table id="vessel-data" class="vessel-table">
-                <thead>
-                    <tr>
-                        <th>Name/Vessel Type</th>
-                        <th>Deadweight</th>
-                        <th>Class</th>
-                        <th>Length(m)</th>
-                        <th>Width(m)</th>
-                        <th>Draft max(m)</th>
-                        <th>Number</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="tug ">
-                        <td><a href="vessel_single.html">Буксир Сатурн / Антон Мазин</a></td>
-                        <td></td>
-                        <td>КМ+ЛУ5 III буксир</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="barge spb ">
-                        <td><a href="vessel_single.html">Self-propellered DNL</a></td>
-                        <td>2000 tdw</td>
-                        <td>R3-IN</td>
-                        <td>101,5</td>
-                        <td>14,16</td>
-                        <td>2,4</td>
-                        <td>2</td>
-                    </tr>
-                    <tr class="crane ">
-                        <td><a href="vessel_single.html">Floating crane SPK 10/35</a></td>
-                        <td>35 tdw</td>
-                        <td>KM LZ 111 1</td>
-                        <td>36,52</td>
-                        <td>18,72</td>
-                        <td>1,95</td>
-                        <td>1</td>
-                    </tr>
-                    <tr class="barge ">
-                        <td><a href="vessel_single.html">Non-self-propellered barge DM</a></td>
-                        <td>1000 tdw</td>
-                        <td>P 1,2</td>
-                        <td>38,25</td>
-                        <td>11,00</td>
-                        <td>3,17</td>
-                        <td>1</td>
-                    </tr>
-                    <tr class="barge ">
-                        <td><a href="vessel_single.html">Non-self-propellered barge DM</a></td>
-                        <td>1000 tdw</td>
-                        <td>P 1,2</td>
-                        <td>38,25</td>
-                        <td>11,00</td>
-                        <td>3,17</td>
-                        <td>1</td>
-                    </tr>
-                    <tr class="barge ">
-                        <td><a href="vessel_single.html">Non-self-propellered barge DM</a></td>
-                        <td>1000 tdw</td>
-                        <td>P 1,2</td>
-                        <td>38,25</td>
-                        <td>11,00</td>
-                        <td>3,17</td>
-                        <td>1</td>
-                    </tr>
-                    <tr class="loader ">
-                        <td><a href="vessel_single.html">Loader SEM 656 D</a></td>
-                        <td>5 tdw</td>
-                        <td></td>
-                        <td>8,40</td>
-                        <td>2,89</td>
-                        <td></td>
-                        <td>1</td>
-                    </tr>
-                    <tr class="loader ">
-                        <td><a href="vessel_single.html">Bobcat</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>2</td>
-                    </tr>
-                    <tr class="loader ">
-                        <td><a href="vessel_single.html">Bobcat</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>2</td>
-                    </tr>
-                    <tr class="loader ">
-                        <td><a href="vessel_single.html">Bobcat</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>2</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <script>
-            let table = document.getElementById('vessel-data');
-            let tbody = table.querySelector('tbody');
-            let trs = tbody.querySelectorAll('tr');
-            let list = document.querySelector('.vessel-tabs');
-            let items = list.querySelectorAll('.tabs-item');
+            </div>
+          <!-- end of pagination -->
+            <div class="container container_flex grid post-wrap">
             
-            items.forEach(element => {
-                    element.addEventListener('click', function(){
-                        items.forEach(function(item){
-                            item.classList.remove('active');
-                        });
-                        element.classList.add('active');
-                        let target = element.classList[1];
-                        console.log(target);
-                        
-                        trs.forEach(function(tr, index){
-                            if(tr.classList.contains(target)) {
-                                tr.classList.remove('d-none');
-                                console.log(index);
-                                tbody.prepend(tr);
-                            } else {
-                                tr.classList.add('d-none');
-                            }
-                        });
-                        
-                    });
-                });
-               
-        </script>
-        </section>
-
+            <article class="post"><!-- post -->
+    
+            <div class="entry-header cf">
+    
+                    <h1><a href="single.html" title="">Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin auctor.</a></h1>
+    
+                    <p class="post-meta">
+                    <p><span class="news__author">Создано Димира Шиппинг</span></p>
+                    <time class="date" datetime="2014-01-14T11:24">Jan 14, 2014</time>
+                    </p>
+    
+            </div>
+    
+            <div class="post-content">
+    
+                    <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Встретил... </p>
+    
+            </div>
+                     
+            </article> <!-- post end -->
+            
+            <article class="post"><!-- post -->
+    
+            <div class="entry-header cf">
+    
+                    <h1><a href="single.html" title="">Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin auctor.</a></h1>
+    
+                    <p class="post-meta">
+                    <p><span class="news__author">Создано Димира Шиппинг</span></p>
+                    <time class="date" datetime="2014-01-14T11:24">Jan 14, 2014</time>
+                    </p>
+    
+            </div>
+    
+            <div class="post-content">
+    
+                    <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Встретил... </p>
+    
+            </div>
+                     
+            </article> <!-- post end -->
+            
+            <article class="post"><!-- post -->
+    
+            <div class="entry-header cf">
+    
+                    <h1><a href="single.html" title="">Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin auctor.</a></h1>
+    
+                    <p class="post-meta">
+                    <p><span class="news__author">Создано Димира Шиппинг</span></p>
+                    <time class="date" datetime="2014-01-14T11:24">Jan 14, 2014</time>
+                    </p>
+    
+            </div>
+    
+            <div class="post-content">
+    
+                    <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Встретил... </p>
+    
+            </div>
+                     
+            </article> <!-- post end -->
+            
+            <article class="post"><!-- post -->
+    
+            <div class="entry-header cf">
+    
+                    <h1><a href="single.html" title="">Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin auctor.</a></h1>
+    
+                    <p class="post-meta">
+                    <p><span class="news__author">Создано Димира Шиппинг</span></p>
+                    <time class="date" datetime="2014-01-14T11:24">Jan 14, 2014</time>
+                    </p>
+    
+            </div>
+    
+            <div class="post-content">
+    
+                    <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Встретил... </p>
+    
+            </div>
+                     
+            </article> <!-- post end -->
+    
+            </div>
+            <div class="container container_flex">
+                      <!-- pagination -->
+                   <nav class="col full pagination">
+                            <ul>
+                            <li><span class="page-numbers prev inactive">Prev</span></li>
+                                    <li><span class="page-numbers current">1</span></li>
+                                    <li><a href="#" class="page-numbers">2</a></li>
+                            <li><a href="#" class="page-numbers">3</a></li>
+                            <li><a href="#" class="page-numbers">4</a></li>
+                            <li><a href="#" class="page-numbers">5</a></li>
+                            <li><a href="#" class="page-numbers">6</a></li>
+                            <li><a href="#" class="page-numbers">7</a></li>
+                            <li><a href="#" class="page-numbers">8</a></li>
+                            <li><a href="#" class="page-numbers">9</a></li>
+                                    <li><a href="#" class="page-numbers next">Next</a></li>
+                            </ul>
+                    </nav>
+                  <!-- end of pagination -->
+            </div>
+           
+    </section>
     </main>
     <footer id="footer">
         <!-- socials -->
@@ -361,5 +334,25 @@
     })();
         </script>
     </footer>
+    <script>
+        function changeView (view) {
+        let postWrap = document.querySelector('.post-wrap');
+        // let postView = document.querySelector('.post-view');
+        let gridIcon = document.querySelector('.post-view__item.grid');
+        let listIcon = document.querySelector('.post-view__item.list');
+        switch (view) {
+                case 'list':
+                postWrap.classList.remove('grid');
+                gridIcon.classList.remove('active');
+                listIcon.classList.add('active');
+                        break;
+                case 'grid':
+                        postWrap.classList.add('grid');
+                        gridIcon.classList.add('active');
+                        listIcon.classList.remove('active');
+                        break;
+        }        
+    };
+    </script>
 </body>
 </html>

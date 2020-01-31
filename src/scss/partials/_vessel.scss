@@ -1,0 +1,38 @@
+.vessel-backlinks {
+    a {
+        background-color: #8dc1ae;
+        color: #fff;
+    }
+
+}
+
+.vessel-descr {
+    display: flex;
+    padding: 50px 0;
+    @media screen and(max-width: 1024px){
+        flex-direction: column;
+    }
+}
+
+.vessel_img-wrap {
+    margin-right: 10px;
+}
+
+.vessel_img {
+    height: 100%;
+    width: auto;
+}
+
+.vessel-single-table {
+    thead {
+        th {
+            text-align-last: left;
+            text-transform: uppercase;
+            color: $darkGray;
+        }
+    }
+    .option {
+        min-width: 30%;
+    }
+
+}

@@ -108,3 +108,39 @@ ul {
 .o-hidden {
     overflow: hidden;
 }
+
+table {
+    font-family: 'Roboto', sans-serif   ;
+    border-collapse: collapse;
+
+    thead {
+        tr {
+            background: #7CB0B1;
+            border: none;
+            
+            th {
+                border: none;
+                font-size: 1rem;
+                color: #fff;
+                padding: 5px 6px;
+                
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            
+            &:not(.d-none):nth-child(odd) {
+                background: #cbdede;
+            }
+
+        }
+
+        td {
+            padding: 8px 6px;
+            font-size: 0.9rem;
+            color: $darkGray;
+        }
+    }
+}
