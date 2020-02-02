@@ -11,7 +11,7 @@
         font-weight: bold;
         width: 70%;
         margin-left: auto;
-        margin-bottom: 0;
+        margin-bottom: 30px;
 
         &--service {
             margin-left: 0;
@@ -43,7 +43,7 @@
             padding-top: 30px;
 
             @media screen and (max-width: 767px) {
-                padding-top: 30px;    
+                padding-top: 15px;    
                 
             }
         }
