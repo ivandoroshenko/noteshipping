@@ -54,8 +54,13 @@
     }
 
     .side-title {
-        color: $darkGray;
-        text-transform: uppercase;
+        a {
+            color: $darkGray;
+            text-transform: uppercase;
+
+            @include underline;
+            @include underline-nav;
+        }
     }
 
 
