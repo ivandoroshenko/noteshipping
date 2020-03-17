@@ -1,16 +1,11 @@
-'use strict';
-
-const newsSlider = document.querySelector('#news-slider');
-const newsSlides = newsSlider.querySelectorAll('.news');
-    launchSlider();
 
 function launchSlider(){
-    let slider = newsSlider;
-    let slides = newsSlides;
-    
 
-    let i = 0;
-    let playInterval = setInterval(function(){ 
+    let slider = document.querySelector('#news-slider');
+    if(slider) {
+		let slides = slider.querySelectorAll('.news');
+		let i = 0;
+    	let playInterval = setInterval(function(){ 
         if(slider.getAttribute('data-slider') == 'false') {
                 clearInterval(playInterval);
                 
@@ -34,7 +29,13 @@ function launchSlider(){
         }        
                     
             }, 7000);
+
+	}
+    
+
+    
         
   
 }
 
+launchSlider();

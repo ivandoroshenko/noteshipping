@@ -83,6 +83,7 @@
     width: 40%;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     @media screen and (max-width: 767px) {
         width: 100%;
@@ -129,9 +130,30 @@
         min-height: 100px;
         width: 100%;
         margin-bottom: 20px;
+        
     }
 
 }
+
+.form-success {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: $all;
+    opacity: 0;
+
+   &.active {
+    display: block;
+    opacity: 1;
+    }
+}
+
+.application .form-success {
+    position: static;
+}
+
 
 button {
     border: none;
@@ -139,7 +161,18 @@ button {
     padding: 10px 25px;
     color: $gray;
     background:$lightGray;
+    transition: $all;
 
+    &:hover,
+    &:focus {
+        background: $gray;
+        color: $lightGray; 
+        outline: none;
+    }
+    
+    &:active {
+        background: #56bfbf;
+    }
 }
 
 .submit-button {

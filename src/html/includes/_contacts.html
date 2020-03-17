@@ -20,15 +20,22 @@
         <form action="#" class="contact-form">
             <div class="name-wrap">
                 <input type="text" class="name" name="address" id="address" placeholder="Адреса">
-                <input type="text" class="name" name="name" id="name" placeholder="Ім'я">
+                <input type="text" class="name" name="name" id="name" placeholder="Ім'я" required>
             </div>
             <div class="name-wrap">
-                <input type="tel" class="name" name="tel" id="tel" placeholder="Телефон">
-                <input type="email" class="name" name="mail" id="mail" placeholder="E-mail">
+                <input type="tel" class="name" name="tel" id="tel" placeholder="Телефон" required>
+                <input type="email" class="name" name="mail" id="mail" placeholder="E-mail" required>
             </div>
-            <textarea name="message" id="message" placeholder="Повідомлення"></textarea>
+            <textarea name="message" id="message" placeholder="Повідомлення" required></textarea>
             <button type="submit" id="contacts-submit" class="submit-button" >Надіслати</button>
             <button type="reset" class="form-reset">Скинути</button>
+            <div class="form-success">
+                <div class="success-message">
+                    <h3 class="side__title">Ваш запит було надіслано</h3>
+                    <button type="button" class="form-reset">Заповнити повторно.</button>
+                </div>
+
+            </div>
         </form>
     </div>
 </section>

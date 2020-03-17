@@ -1,7 +1,15 @@
 .vessel-backlinks {
+    margin-top: 30px;
     a {
         background-color: #8dc1ae;
         color: #fff;
+        padding: 10px 20px;
+        display: inline-block;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
 }
@@ -9,21 +17,35 @@
 .vessel-descr {
     display: flex;
     padding: 50px 0;
-    @media screen and(max-width: 1024px){
-        flex-direction: column;
+    @media screen and(max-width: 767px){
+        flex-direction: column-reverse;
+        padding: 30px 0;
     }
 }
 
 .vessel_img-wrap {
-    margin-right: 10px;
+    width: 35%;
+    padding-right: 10px;
+    @media screen and(max-width: 767px){
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .vessel_img {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
+
+
 .vessel-single-table {
+    width: 65%;
+
+    @media screen and(max-width: 767px){
+        width: 100%;
+    }
+
     thead {
         th {
             text-align-last: left;

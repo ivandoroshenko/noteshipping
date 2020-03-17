@@ -24,23 +24,25 @@
             display: none;
         }
 
-    }
-
-    .prev {
-        left: 100px;
-
-        &:hover {
-            transform: translate(-10px, -50%); 
+        &.prev {
+            left: 100px;
+    
+            &:hover {
+                transform: translate(-10px, -50%); 
+            }
         }
-    }
-
-    .next {
-        right: 100px;
-
-        &:hover {
-            transform: translate(10px, -50%); 
+    
+        &.next {
+            right: 100px;
+    
+            &:hover {
+                transform: translate(10px, -50%); 
+            }
         }
+
     }
+
+   
 
 
 .main-slider {

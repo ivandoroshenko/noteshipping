@@ -19,8 +19,8 @@
         </div>
         <div class="container container_flex">
             <div class="header__column_left">
-                <a href="index.html" class="logo__link">
-                    <img src="./img/logo.png" alt="logo.png" class="header__logo-img">
+                <a href="index.html" class="custom-logo-link">
+                    <img src="./img/logo.png" alt="logo.png" class="custom-logo">
                     <h2 class="logo__title">Діміра Шиппінг <span>Завжди на вахті</span></h2>
                 </a>
             </div>
@@ -45,64 +45,64 @@
                     </div>
                 <nav class="nav header__nav">
                     <ul class="header__nav-list nav__list">
-                        <li class="header__nav-item nav__item flat">
+                        <li class="header__nav-item menu-item ">
                             <a href="about_us.html" class="header__nav-link nav__link">Про нас</a>
                         </li>
-                        <li class="header__nav-item nav__item flat">
+                        <li class="header__nav-item menu-item ">
                             <a href="blog.html" class="header__nav-link nav__link">Новини</a>
                         </li>
-                        <li class="header__nav-item nav__item flat"> <!-- change to dropdown and uncomment before for nested list -->
+                        <li class="header__nav-item menu-item "> <!-- change to dropdown and uncomment before for nested list -->
                             <a href="fleet.html" class="header__nav-link nav__link">Флот</a>
-                            <!-- <ul class="dropdown__list">
-                                <li class="dropdown__item">
+                            <!-- <ul class="sub-menu">
+                                <li class="menu-item">
                                     <a href="fleet.html" class="dropdown__link">Буксири</a>
                                 </li>
-                                <li class="dropdown__item">
+                                <li class="menu-item">
                                     <a href="fleet.html" class="dropdown__link">Крани</a>
                                 </li>
-                                <li class="dropdown__item">
+                                <li class="menu-item">
                                     <a href="fleet.html" class="dropdown__link">Катери</a>
                                 </li>
                             </ul> -->
                         </li>
-                        <li class="header__nav-item nav__item dropdown">
+                        <li class="header__nav-item menu-item menu-item-has-children">
                             <a href="./services.html" class="header__nav-link nav__link">Послуги</a>
-                            <ul class="dropdown__list">
-                                <li class="dropdown__item">
+                            <ul class="sub-menu">
+                                <li class="menu-item">
                                     <a href="./services.html" class="dropdown__link">Буксирування</a>
                                 </li>
-                                <li class="dropdown__item">
+                                <li class="menu-item">
                                     <a href="./services.html" class="dropdown__link">Навантажувально-розвантажувальні роботи</a>
                                 </li>
-                                <li class="dropdown__item">
+                                <li class="menu-item">
                                     <a href="./services.html" class="dropdown__link">Перевезення</a>
                                 </li>
-                                <li class="dropdown__item">
+                                <li class="menu-item">
                                     <a href="./services.html" class="dropdown__link">Агентування</a>
                                 </li>
-                                <li class="dropdown__item">
+                                <li class="menu-item">
                                     <a href="./services.html" class="dropdown__link">Екпедирування</a>
                                 </li>
-                                <li class="dropdown__item">
+                                <li class="menu-item">
                                     <a href="./services.html" class="dropdown__link">Ремонт вантажних підйомних пристроїв</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="d-none header__nav-item nav__item flat">
+                        <li class="d-none header__nav-item menu-item ">
                             <a href="partners.html" class="header__nav-link nav__link">наші партнери</a>
                         </li>
-                        <li class="header__nav-item nav__item dropdown">
+                        <li class="header__nav-item menu-item menu-item-has-children">
                             <a href="career.html" class="header__nav-link nav__link">Кар'ера</a>
-                            <ul class="dropdown__list">
-                                <!-- <li class="dropdown__item ">
+                            <ul class="sub-menu">
+                                <!-- <li class="menu-item ">
                                     <a href="careers.html" class="dropdown__link">Морскі спеціальності</a>
                                 </li> -->
-                                <li class="dropdown__item">
+                                <li class="menu-item">
                                     <a href="career.html" class="dropdown__link">Заповнити анкету</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="header__nav-item nav__item flat">
+                        <li class="header__nav-item menu-item ">
                             <a href="contacts.html" class="header__nav-link nav__link">Контакти</a>
                         </li>
                     </ul>
@@ -136,11 +136,10 @@
             </nav>
             <ul class="post-view">
     
-                    <li class="post-view__item list" onclick="changeView('list'); ">
+                    <li class="post-view__item list"  ">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list" class="svg-inline--fa fa-list fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg>
                     </li>
-                    <li class="post-view__item grid active" onclick="changeView('grid');" >
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="th-large" class="svg-inline--fa fa-th-large fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M296 32h192c13.255 0 24 10.745 24 24v160c0 13.255-10.745 24-24 24H296c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24zm-80 0H24C10.745 32 0 42.745 0 56v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24zM0 296v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm296 184h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H296c-13.255 0-24 10.745-24 24v160c0 13.255 10.745 24 24 24z"></path></svg>
+                    <li class="post-view__item grid active" " > <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="th-large" class="svg-inline--fa fa-th-large fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M296 32h192c13.255 0 24 10.745 24 24v160c0 13.255-10.745 24-24 24H296c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24zm-80 0H24C10.745 32 0 42.745 0 56v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24zM0 296v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm296 184h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H296c-13.255 0-24 10.745-24 24v160c0 13.255 10.745 24 24 24z"></path></svg>
                     </li>
             </ul>
             </div>
@@ -291,22 +290,22 @@
         <div class="container footer-nav-container">
             <nav class="nav footer__nav">
                 <ul class="footer__nav-list nav__list">
-                    <li class="footer__nav-item nav__item flat">
+                    <li class="footer__nav-item menu-item ">
                         <a href="about_us.html" class="footer__nav-link nav__link">Про нас</a>
                     </li>
-                    <li class="footer__nav-item nav__item flat">
+                    <li class="footer__nav-item menu-item ">
                         <a href="fleet.html" class="footer__nav-link nav__link">Флот</a>
                     </li>
-                    <li class="footer__nav-item nav__item flat">
+                    <li class="footer__nav-item menu-item ">
                         <a href="services.html" class="footer__nav-link nav__link">Послуги</a>
                     </li>
-                    <!-- <li class="d-none footer__nav-item nav__item flat">
+                    <!-- <li class="d-none footer__nav-item menu-item flat">
                         <a href="partners.html" class="footer__nav-link nav__link">наші партнери</a>
                     </li> -->
-                    <li class="footer__nav-item nav__item flat">
+                    <li class="footer__nav-item menu-item ">
                         <a href="career.html" class="footer__nav-link nav__link">Кар'ера</a>
                     </li>
-                    <li class="footer__nav-item nav__item flat">
+                    <li class="footer__nav-item menu-item ">
                         <a href="contacts.html" class="footer__nav-link nav__link">Контакти</a>
                     </li>
                 </ul>
@@ -317,42 +316,41 @@
                 <li>Designed by <a class="copyright-link" href="https://ivandoroshenko.github.io/portfolio/src" title="Ivan Doroshenko">ID</a></li>
             </ul>
         </div>
-        <script>
-            'use strict';
-    
-    (function toggle_menu() {
-        let toggle = document.querySelector('#toggle-icon');
-        let overlay = document.querySelector('#overlay');
-        let toggleMenu = document.querySelector('#toggle-menu');
-        toggle.addEventListener('click', function () {
-            this.classList.toggle('open');
-             overlay.classList.toggle('d-none--mob');
-             toggleMenu.classList.toggle('hidden');
-             document.body.classList.toggle('o-hidden');
-        });
-        
-    })();
-        </script>
     </footer>
     <script>
-        function changeView (view) {
-        let postWrap = document.querySelector('.post-wrap');
-        // let postView = document.querySelector('.post-view');
-        let gridIcon = document.querySelector('.post-view__item.grid');
-        let listIcon = document.querySelector('.post-view__item.list');
-        switch (view) {
-                case 'list':
-                postWrap.classList.remove('grid');
-                gridIcon.classList.remove('active');
-                listIcon.classList.add('active');
-                        break;
-                case 'grid':
-                        postWrap.classList.add('grid');
-                        gridIcon.classList.add('active');
-                        listIcon.classList.remove('active');
-                        break;
-        }        
-    };
+        'use strict';
+    
+    (function toggle_menu() {
+    
+    let toggle = document.querySelector('#toggle-icon');
+    let overlay = document.querySelector('#overlay');
+    let toggleMenu = document.querySelector('#toggle-menu');
+    toggle.addEventListener('click', function () {
+        this.classList.toggle('open');
+         overlay.classList.toggle('d-none--mob');
+         toggleMenu.classList.toggle('hidden');
+         document.body.classList.toggle('o-hidden');
+    });
+    
+    })();
+    (function accordion() {
+    let menuItems = document.querySelectorAll('.menu-item');
+        menuItems.forEach(function(item){
+            
+            item.addEventListener('click', function(){
+                let nav = item.closest('ul');
+                let thisMenu = item.querySelector('.sub-menu');
+                // console.log(subMenu);
+                let subMenus = nav.querySelectorAll('.sub-menu');
+                subMenus.forEach(function(menu){
+                    menu.style.display = 'none';
+                    thisMenu.style.display = 'block';
+                    
+                });
+            });
+            
+        });
+    })();
     </script>
 </body>
 </html>

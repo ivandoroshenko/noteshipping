@@ -141,6 +141,17 @@ table {
             padding: 8px 6px;
             font-size: 0.9rem;
             color: $darkGray;
+            @media screen and(max-width: 767px) {
+                font-size: 1.1rem;
+             }
         }
     }
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
 }
