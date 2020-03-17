@@ -1,17 +1,21 @@
-.logo__link {
+.custom-logo-link {
     display: flex;
     align-items: flex-end;
 }
 
 .logo__title {
-    text-transform: uppercase;
     flex-basis: 294px;
-    line-height: 1.25;
-    font-size: 1.5rem;    
-    font-family: $exo;
     margin: 0;
     padding-bottom: 20px;
-    color: #000;
+    
+    .logo__link {
+        line-height: 1.25;
+        font-size: 1.5rem;    
+        font-family: $exo;
+        color: #000;
+        text-transform: uppercase;  
+
+    }
 
     span {
         display: block;
@@ -23,7 +27,7 @@
     }
 }
 
-.logo__link {
+.custom-logo-link {
     margin-right: 30px;
 
     @media screen and(max-width: 767px){

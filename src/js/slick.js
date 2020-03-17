@@ -33,4 +33,3 @@ let mainSlider = doc.querySelector('.main-slider');
    
     
 
-    $(mainSlider).slick('refresh');

@@ -1,12 +1,9 @@
 
-.dropdown {
+.menu-item-has-children {
     position: relative;
-
-    @media screen and(max-width: 1024px) {
-       pointer-events: none;
-     }
+    cursor: pointer;
     
-    .dropdown__list {   
+    .sub-menu {   
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -18,19 +15,58 @@
         transition: $dropdown;
         pointer-events: none;
         z-index: 3;
+        
 
-        @media screen and(max-width: 1024px) {
+        @media screen and(max-width: 1280px) {
             min-width: 100px;
             right: 0;
             top: 70%;
          }
+
         @media screen and(max-width: 767px) {
             display: none;
+            position: static;
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            min-width: unset;
          }
+
+         .menu-item {
+            &:hover {
+                background: $darkGray;
+            }
+            a {
+                 text-decoration: none;
+                 line-height: 48px;
+                 white-space: nowrap;
+                 text-transform: uppercase;
+                 color: $gray;
+                 background: rgba(230, 232, 235, 1);
+                 padding: 0 15px;
+                 display: block;
+                 font-size: 1rem;
+                 transition: $all;
+         
+                 &:hover {
+                     // background: rgba(255, 255, 255, 1);
+                     background: $darkGray;
+                     color: $lightGray;
+                 }
+
+                 @media screen and(max-width: 767px) {
+                    background: none;
+                    font-size: 1.1rem;
+                    white-space: normal;
+                    line-height: 1.5;
+                    margin-bottom: 10px;
+                 }
+             }
+        }
     }
 
     &:hover {
-        .dropdown__list {
+        .sub-menu {
             opacity: 1;
             // top: 100%;
             pointer-events: all;
@@ -42,36 +78,12 @@
         
     }
 
-    .dropdown__item {
-        &:hover {
-            background: $darkGray;
-        }
-    }
-
-   .dropdown__link {
-        text-decoration: none;
-        line-height: 48px;
-        white-space: nowrap;
-        text-transform: uppercase;
-        color: $gray;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 0 15px;
-        display: block;
-        font-size: 1rem;
-        transition: $all;
-
-        &:hover {
-            // background: rgba(255, 255, 255, 1);
-            background: $darkGray;
-            color: $lightGray;
-        }
-    }
-
-    .nav__link {
-        @media screen and(max-width: 1024px) {
-            pointer-events: all;
+    & > a {
+        @media screen and(max-width: 1023px) {
+            pointer-events: none;
          }
         
+                
     }
     
 }

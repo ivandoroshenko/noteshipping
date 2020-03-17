@@ -32,6 +32,10 @@ footer {
                     
                 }
             }
+
+            &[data-filled=""] {
+                display: none;
+            }
         }
     }
 

@@ -135,32 +135,40 @@
 </div>
 
 <script>
-    let table = document.getElementById('vessel-data');
-    let tbody = table.querySelector('tbody');
-    let trs = tbody.querySelectorAll('tr');
-    let list = document.querySelector('.vessel-tabs');
-    let items = list.querySelectorAll('.tabs-item');
-    
-    items.forEach(element => {
-            element.addEventListener('click', function(){
-                items.forEach(function(item){
-                    item.classList.remove('active');
-                });
-                element.classList.add('active');
-                let target = element.classList[1];
-                console.log(target);
-                
-                trs.forEach(function(tr, index){
-                    if(tr.classList.contains(target)) {
+let table = document.getElementById('vessel-data');
+if(table) {
+let tbody = table.querySelector('tbody');
+let trs = tbody.querySelectorAll('tr');
+let list = document.querySelector('.vessel-tabs');
+let items = list.querySelectorAll('.tabs-item');
+let all = list.querySelector('.tabs-item.all');
+
+items.forEach(item => {
+    let target = item.classList[1];
+    if(location.href.indexOf(target) != -1) {
+        item.classList.add('active');
+        if(target != 'all') {
+            all.classList.remove('active');
+        }
+          trs.forEach(function(tr, index){
+                console.log('works')
+                    if(target == 'all' || tr.classList.contains(target)) {
                         tr.classList.remove('d-none');
-                        console.log(index);
                         tbody.prepend(tr);
                     } else {
                         tr.classList.add('d-none');
                     }
                 });
-                
-            });
-        });
-       
+    }
+
+    item.addEventListener('click', function(){
+           location.href = location.pathname + '?' + target; 
+
+    }); 
+});
+
+}
+
+   
+
 </script>
